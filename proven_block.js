@@ -35,16 +35,16 @@ function (context, args) {
     return genericProvenBlock;
   }
 
-  /*return {
-    GenericProvenBlock:GenericProvenBLock
-  }*/
+  return {
+    GenericProvenBlock:GenericProvenBlock
+  }
 
-  function test_GenericProvenBlock () {
+  /*function test_GenericProvenBlock () {
     let blockchain = []
     blockchain.push(bcl.GenesisBlock(blockchain))
     blockchain.push(GenericProvenBlock(blockchain, 5, {message:"This is a generic proven block for testing purposes."}));
     return blockchain;
   }
 
-  return test_GenericProvenBlock()
+  return test_GenericProvenBlock()*/
 }
