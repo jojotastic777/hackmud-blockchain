@@ -1,5 +1,4 @@
 function (context, args) {
-  //Do note, that some of the script calls will have to be modified for now, as kvothe_the_arcane.cryptolib is not currently public.
   /*
     BlockChainLib Version 0.1.0
 
@@ -22,7 +21,7 @@ function (context, args) {
    * GerericBlock: The generic Block type that all others inherit from in some way.
    * @param  {array}  blockChain See documentation at the top of this file.
    * @param  {object} data       The property "data" is set to this value. This is the property that usually changes between block types.
-   * @return {GenericBlock}
+   * @constructor
    */
   var GenericBlock = function (blockChain, data) {
     let genericBlock = {
@@ -43,7 +42,7 @@ function (context, args) {
   /**
    * GenesisBlock: Special block placed at the beginning of a blockChain. not strictly required, but heavily recommended.
    * @param  {array}  blockChain See documentation at the top of this file.
-   * @return {GenesisBlock}
+   * @constructor
    */
   var GenesisBlock = function (blockChain) {
     let genesisBlock = GenericBlock(blockChain, {
